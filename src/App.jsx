@@ -19,8 +19,8 @@ export default function App() {
       <Sidebar activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
 
       {/* Main content */}
-      <main className="flex-1 bg-white rounded-2xl shadow-sm flex flex-col mt-6">
-        <div className="bg-white rounded-2xl shadow-sm p-6 space-y-6   overflow-y-auto max-h-screen w-full">
+      <main className="flex-1 bg-white rounded-2xl shadow-sm flex flex-col mt-2">
+        <div className="bg-white rounded-2xl shadow-sm p-6 space-y-6 overflow-y-auto max-h-screen w-full">
           
           {/* Header */}
           <Header />
