@@ -15,12 +15,12 @@ import {
 } from "./icons";
 
 const mainMenuItems = [
-  { icon: IconOverview, label: "Overview" },
-  { icon: IconClassPreparation, label: "Class Preparation" },
-  { icon: IconAttendance, label: "Attendance" },
-  { icon: IconExamsNav, label: "Exams" },
-  { icon: IconSchedule, label: "Schedule" },
-  { icon: IconStudents, label: "Students" },
+  { icon: IconOverview, label: "Dashboard" },
+  { icon: IconClassPreparation, label: "Announcements" },
+  { icon: IconAttendance, label: "Attendance and Leave" },
+  { icon: IconExamsNav, label: "Rewards" },
+  { icon: IconSchedule, label: "Events" },
+  { icon: IconStudents, label: "Goals" },
   { icon: IconMessages, label: "Messages", badge: 2 },
   { icon: IconAnalytics, label: "Analytics" },
   { icon: IconReports, label: "Reports" },
