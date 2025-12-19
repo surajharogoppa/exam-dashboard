@@ -1,21 +1,47 @@
-import { useState } from "react";
+// src/components/common/Header.jsx
+import { useLocation } from "react-router-dom";
+
+const routeTitleMap = {
+  "/": "Dashboard",
+  "/exams": "Exams",
+  "/announcements": "Announcements",
+  "/attendance": "Attendance & Leave",
+  "/rewards": "Rewards",
+  "/events": "Events",
+  "/goals": "Goals",
+  "/messages": "Messages",
+  "/analytics": "Analytics",
+  "/reports": "Reports",
+  "/settings": "Settings",
+  "/school-news": "School News",
+  "/school-activities": "School Activities",
+  "/whats-new": "What’s New",
+  "/account": "Account",
+};
 
 export default function Header() {
-  const [search, setSearch] = useState("");
+  const location = useLocation();
+
+  // 🔹 Later replace with real logged-in user
+  const username = "Amirbaqian";
+
+  const pageTitle =
+    routeTitleMap[location.pathname] ?? "Dashboard";
 
   return (
     <header className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
-      <div className="flex items-center gap-2 flex-wrap">
 
-
-        <div className="flex items-center gap-1 text-sm text-gray-600">
-          <span className="opacity-50">Maham &gt;</span>
-          <span className="font-semibold text-gray-800">Exams</span>
-        </div>
-
+      {/* LEFT: USER > PAGE */}
+      <div className="flex items-center gap-1 text-sm text-gray-600">
+        <span className="opacity-50">{username} &gt;</span>
+        <span className="font-semibold text-gray-800">
+          {pageTitle}
+        </span>
       </div>
 
+      {/* RIGHT: ICONS (UNCHANGED SVGs) */}
       <div className="flex items-center gap-3">
+
         {/* Notification Bell */}
         <button className="p-2 rounded-md hover:bg-gray-200">
           <svg
@@ -31,7 +57,7 @@ export default function Header() {
           </svg>
         </button>
 
-        {/* Square Chat/Message Box */}
+        {/* Chat / Messages */}
         <button className="p-2 rounded-md hover:bg-gray-200">
           <svg
             className="w-6 h-6 stroke-current text-gray-600"
@@ -42,14 +68,13 @@ export default function Header() {
             strokeLinejoin="round"
             viewBox="0 0 24 24"
           >
-            {/* Chat bubble with bottom center tail + text lines */}
             <path d="M2 5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6l-4 4V5z" />
             <path d="M8 10h8" />
             <path d="M8 14h8" />
           </svg>
         </button>
 
-        {/* Search Icon */}
+        {/* Search */}
         <button className="p-2 rounded-md hover:bg-gray-200">
           <svg
             className="w-6 h-6 stroke-current text-gray-600"
@@ -65,9 +90,6 @@ export default function Header() {
           </svg>
         </button>
 
-
-
-       
       </div>
     </header>
   );

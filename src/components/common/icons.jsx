@@ -1,9 +1,9 @@
 import {
   Home,
-  BookOpen,
+  Megaphone,
   CheckSquare,
-  FileText,
-  Calendar,
+  Ribbon,
+  CalendarHeart,
   Users,
   MessageCircle,
   BarChart2,
@@ -12,10 +12,11 @@ import {
 } from "lucide-react";
 
 export const IconOverview = (props) => <Home {...props} />;
-export const IconClassPreparation = (props) => <BookOpen {...props} />;
+export const IconClassPreparation = (props) => <Megaphone {...props} />;
 export const IconAttendance = (props) => <CheckSquare {...props} />;
-export const IconExamsNav = (props) => <FileText {...props} />;
-export const IconSchedule = (props) => <Calendar {...props} />;
+export const IconRewardsNav = (props) => <Ribbon {...props} />;
+export const IconExamsNav = (props) => <CheckSquare {...props} />;
+export const IconSchedule = (props) => <CalendarHeart {...props} />;
 export const IconStudents = (props) => <Users {...props} />;
 export const IconMessages = (props) => <MessageCircle {...props} />;
 export const IconAnalytics = (props) => <BarChart2 {...props} />;
