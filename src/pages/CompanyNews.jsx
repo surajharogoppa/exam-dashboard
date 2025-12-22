@@ -2,12 +2,7 @@ import { Newspaper, Flame, Plus, MessageCircle } from "lucide-react";
 
 /* ---------------- DATA ---------------- */
 
-const summary = [
-  { label: "Articles", value: 32, bg: "#D9D9F5" },
-  { label: "This Month", value: 6, bg: "#D9F5E3" },
-  { label: "Teams Covered", value: 8, bg: "#F9E6A7" },
-  { label: "Engagement", value: "High", bg: "#F8D3CC" },
-];
+
 
 const featuredNews = {
   title: "EmployeeHub Launches New Rewards Program",
@@ -66,19 +61,7 @@ export default function CompanyNews() {
         </button>
       </div>
 
-      {/* SUMMARY */}
-      <section className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        {summary.map((s) => (
-          <div
-            key={s.label}
-            className="rounded-xl p-4"
-            style={{ backgroundColor: s.bg }}
-          >
-            <div className="text-xs text-gray-600">{s.label}</div>
-            <div className="text-2xl font-semibold">{s.value}</div>
-          </div>
-        ))}
-      </section>
+      
 
       {/* MAIN GRID */}
       <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">

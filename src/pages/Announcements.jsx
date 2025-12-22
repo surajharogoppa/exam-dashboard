@@ -77,19 +77,7 @@ export default function Announcements() {
         </button>
       </div>
 
-      {/* SUMMARY CARDS */}
-      <section className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        {summaryCards.map((c) => (
-          <div
-            key={c.label}
-            className="rounded-xl p-4"
-            style={{ backgroundColor: c.bg }}
-          >
-            <div className="text-xs text-gray-600">{c.label}</div>
-            <div className="text-2xl font-semibold">{c.value}</div>
-          </div>
-        ))}
-      </section>
+     
 
       {/* FILTERS */}
       <section className="flex items-center gap-2 text-xs font-semibold text-gray-600">
@@ -165,6 +153,19 @@ export default function Announcements() {
           </div>
         </aside>
       </div>
+       {/* SUMMARY CARDS */}
+      <section className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        {summaryCards.map((c) => (
+          <div
+            key={c.label}
+            className="rounded-xl p-4"
+            style={{ backgroundColor: c.bg }}
+          >
+            <div className="text-xs text-gray-600">{c.label}</div>
+            <div className="text-2xl font-semibold">{c.value}</div>
+          </div>
+        ))}
+      </section>
     </div>
   );
 }

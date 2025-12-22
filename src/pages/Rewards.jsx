@@ -64,19 +64,7 @@ export default function Rewards() {
         </p>
       </div>
 
-      {/* SUMMARY */}
-      <section className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        {summary.map((s) => (
-          <div
-            key={s.label}
-            className="rounded-xl p-4"
-            style={{ backgroundColor: s.bg }}
-          >
-            <div className="text-xs text-gray-600">{s.label}</div>
-            <div className="text-2xl font-semibold">{s.value}</div>
-          </div>
-        ))}
-      </section>
+      
 
       {/* MAIN GRID */}
       <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
@@ -148,6 +136,19 @@ export default function Rewards() {
           </div>
         </aside>
       </div>
+      {/* SUMMARY */}
+      <section className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        {summary.map((s) => (
+          <div
+            key={s.label}
+            className="rounded-xl p-4"
+            style={{ backgroundColor: s.bg }}
+          >
+            <div className="text-xs text-gray-600">{s.label}</div>
+            <div className="text-2xl font-semibold">{s.value}</div>
+          </div>
+        ))}
+      </section>
     </div>
   );
 }
@@ -192,6 +193,8 @@ function RewardCard({ data }) {
       </div>
 
       <div className="text-xs text-gray-600">{data.date}</div>
+      
     </div>
+    
   );
 }
