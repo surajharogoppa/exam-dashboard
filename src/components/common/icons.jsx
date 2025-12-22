@@ -9,7 +9,8 @@ import {
   MessageCircle,
   BarChart2,
   PieChart,
-  Settings
+  Settings,
+  Newspaper,
 } from "lucide-react";
 
 export const IconOverview = (props) => <Home {...props} />;
@@ -24,13 +25,7 @@ export const IconMessages = (props) => <MessageCircle {...props} />;
 export const IconAnalytics = (props) => <BarChart2 {...props} />;
 export const IconReports = (props) => <PieChart {...props} />;
 export const IconSettings = (props) => <Settings {...props} />;
-export function IconNews(props) {
-  return (
-    <svg {...props} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-      <path d="M4 6h16M4 10h16M4 14h16M4 18h16" />
-    </svg>
-  );
-}
+export const IconNews = (props) => <Newspaper {...props} />;
 
 export function IconActivities(props) {
   return (
