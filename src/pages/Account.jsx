@@ -40,9 +40,9 @@ export default function Account() {
         />
 
         <div className="space-y-1">
-          <h2 className="text-lg font-semibold">Suraj Harogoppa</h2>
+          <h2 className="text-lg font-semibold">Anand Budavi</h2>
           <p className="text-sm text-gray-600 flex items-center gap-2">
-            <Mail size={14} /> suraj@email.com
+            <Mail size={14} /> anand@linux.com
           </p>
         </div>
       </section>
