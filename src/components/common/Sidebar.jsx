@@ -113,7 +113,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
         )}
 
         {showBottomShadow && (
-          <div className="pointer-events-none absolute bottom-1 inset-x-0 h-6 
+          <div className="pointer-events-none absolute bottom-0 inset-x-0 h-6 
                   bg-gradient-to-t from-black/10 via-black/5 to-transparent
                   rounded-b-xl" />
         )}
