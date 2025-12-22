@@ -80,7 +80,7 @@ export default function GlobalHeader({ sidebarWidth, toggleSidebar }) {
             />
             <div className="hidden sm:block leading-tight">
               <div className="text-sm font-medium text-gray-800">
-                Suraj
+                Anand
               </div>
               <div className="text-xs text-gray-500">Admin</div>
             </div>
