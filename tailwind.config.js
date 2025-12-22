@@ -14,7 +14,7 @@ module.exports = {
         badgeGray: '#D9D9D9',
         upcomingPurple: '#D9D9F5',
         upcomingGreen: '#D9F5E3',
-        sidebarTop: "#d7ccefff",
+        sidebarTop: "#a4d0eeff",
         sidebarBottom: "#FFFFFF",
         sidebarActiveBg: '#F3F4F6',
         calendarPillBg: '#F3F4F6',

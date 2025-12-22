@@ -30,14 +30,15 @@ const mainMenuItems = [
   { icon: IconMessages, label: "Messages", path: "/messages", badge: 2 },
   { icon: IconAnalytics, label: "Analytics", path: "/analytics" },
   { icon: IconReports, label: "Reports", path: "/reports" },
-  { icon: IconSettings, label: "Settings", path: "/settings" },
+  
 ];
 
 /* ---------------- BOTTOM MENU (INCLUDES USER) ---------------- */
 
 const bottomMenuItems = [
-  { icon: IconNews, label: "School News", path: "/school-news" },
+  { icon: IconNews, label: "Company News", path: "/company-news" },
   { icon: IconWhatsNew, label: "What's New", path: "/whats-new" },
+  { icon: IconSettings, label: "Settings", path: "/settings" },
   {
     type: "user",
     path: "/account",
@@ -73,12 +74,18 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
   }, []);
 
   return (
-    <nav
-      className={`h-full p-4 flex flex-col rounded-2xl bg-transparent
-        transition-all duration-300
-        ${isOpen ? "w-64" : "w-16"}
-      `}
-    >
+       <nav
+          className={`fixed top-0 left-0 h-screen z-50
+            p-4 flex flex-col bg-white/97 backdrop-blur
+            transition-transform duration-300
+            ${isOpen ? "translate-x-0" : "-translate-x-full"}
+            md:translate-x-0
+            ${isOpen ? "md:w-64" : "md:w-16"}
+          `}
+        >
+
+
+
       {/* ───────── TOP CONTROL ───────── */}
       <div className="flex items-center justify-between mb-1 shrink-0">
         {isOpen && (

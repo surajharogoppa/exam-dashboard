@@ -13,7 +13,7 @@ import Messages from "../pages/Messages";
 import Analytics from "../pages/Analytics";
 import Reports from "../pages/Reports";
 import Settings from "../pages/Settings";
-import SchoolNews from "../pages/SchoolNews";
+import CompanyNews from "../pages/CompanyNews";
 import WhatsNew from "../pages/WhatsNew";
 import Account from "../pages/Account";
 
@@ -31,11 +31,12 @@ export default function AppRoutes() {
         <Route path="/messages" element={<Messages />} />
         <Route path="/analytics" element={<Analytics />} />
         <Route path="/reports" element={<Reports />} />
-        <Route path="/settings" element={<Settings />} />
+        
 
         {/* Extra pages */}
-        <Route path="/school-news" element={<SchoolNews />} />
+        <Route path="/company-news" element={<CompanyNews />} />
         <Route path="/whats-new" element={<WhatsNew />} />
+        <Route path="/settings" element={<Settings />} />
         <Route path="/account" element={<Account />} />
 
 
