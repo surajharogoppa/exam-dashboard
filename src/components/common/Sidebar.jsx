@@ -4,6 +4,7 @@ import {
   IconOverview,
   IconClassPreparation,
   IconAttendance,
+  IconEmployee,
   IconRewardsNav,
   IconExamsNav,
   IconSchedule,
@@ -23,6 +24,7 @@ const mainMenuItems = [
   { icon: IconOverview, label: "Dashboard", path: "/" },
   { icon: IconClassPreparation, label: "Announcements", path: "/announcements" },
   { icon: IconAttendance, label: "Attendance and Leave", path: "/attendance" },
+  { icon: IconEmployee, label: "Employees", path: "/employees" },
   { icon: IconRewardsNav, label: "Rewards", path: "/rewards" },
   { icon: IconSchedule, label: "Events", path: "/events" },
   { icon: IconExamsNav, label: "Exams", path: "/exams" },
@@ -30,7 +32,7 @@ const mainMenuItems = [
   { icon: IconMessages, label: "Messages", path: "/messages", badge: 2 },
   { icon: IconAnalytics, label: "Analytics", path: "/analytics" },
   { icon: IconReports, label: "Reports", path: "/reports" },
-  
+
 ];
 
 /* ---------------- BOTTOM MENU (INCLUDES USER) ---------------- */
@@ -54,13 +56,12 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
   const [showBottomShadow, setShowBottomShadow] = useState(false);
 
   const linkClasses = ({ isActive }) =>
-  `flex items-center rounded-lg transition-colors
+    `flex items-center rounded-lg transition-colors
    ${isOpen ? "gap-3 px-3 py-2" : "justify-center py-2"}
-   ${
-     isActive
-       ? "bg-white text-gray-900 font-medium shadow-sm"
-       : "text-gray-600 hover:bg-gray-100"
-   }`;
+   ${isActive
+      ? "bg-white text-gray-900 font-medium shadow-sm"
+      : "text-gray-600 hover:bg-gray-100"
+    }`;
 
   const handleScroll = () => {
     const el = scrollRef.current;
@@ -74,15 +75,15 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
   }, []);
 
   return (
-       <nav
-          className={`fixed top-0 left-0 h-screen z-50
+    <nav
+      className={`fixed top-0 left-0 h-screen z-50
             p-4 flex flex-col bg-white/97 backdrop-blur
             transition-transform duration-300
             ${isOpen ? "translate-x-0" : "-translate-x-full"}
             md:translate-x-0
             ${isOpen ? "md:w-64" : "md:w-16"}
           `}
-        >
+    >
 
 
 
@@ -104,11 +105,19 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
       {/* ───────── SCROLLABLE MAIN MENU ───────── */}
       <div className="relative flex-1 min-h-0">
         {showTopShadow && (
-          <div className="pointer-events-none absolute top-0 inset-x-0 h-3 bg-gradient-to-b from-gray-200/70 to-transparent" />
+          <div
+            className="pointer-events-none absolute top-0 inset-x-0 h-4
+               bg-gradient-to-b from-black/10 via-black/5 to-transparent
+               rounded-t-xl"
+          />
         )}
+
         {showBottomShadow && (
-          <div className="pointer-events-none absolute bottom-0 inset-x-0 h-3 bg-gradient-to-t from-gray-200/70 to-transparent" />
+          <div className="pointer-events-none absolute bottom-1 inset-x-0 h-6 
+                  bg-gradient-to-t from-black/10 via-black/5 to-transparent
+                  rounded-b-xl" />
         )}
+
 
         <div
           ref={scrollRef}

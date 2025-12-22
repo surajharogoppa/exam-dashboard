@@ -2,9 +2,10 @@ import {
   Home,
   Megaphone,
   CheckSquare,
+  CircleUserRound,
   Ribbon,
   CalendarHeart,
-  Users,
+  Goal,
   MessageCircle,
   BarChart2,
   PieChart,
@@ -14,10 +15,11 @@ import {
 export const IconOverview = (props) => <Home {...props} />;
 export const IconClassPreparation = (props) => <Megaphone {...props} />;
 export const IconAttendance = (props) => <CheckSquare {...props} />;
+export const IconEmployee = (props) => <CircleUserRound {...props} />;
 export const IconRewardsNav = (props) => <Ribbon {...props} />;
 export const IconExamsNav = (props) => <CheckSquare {...props} />;
 export const IconSchedule = (props) => <CalendarHeart {...props} />;
-export const IconStudents = (props) => <Users {...props} />;
+export const IconStudents = (props) => <Goal {...props} />;
 export const IconMessages = (props) => <MessageCircle {...props} />;
 export const IconAnalytics = (props) => <BarChart2 {...props} />;
 export const IconReports = (props) => <PieChart {...props} />;

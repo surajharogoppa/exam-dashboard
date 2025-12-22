@@ -6,6 +6,7 @@ const routeTitleMap = {
   "/exams": "Exams",
   "/announcements": "Announcements",
   "/attendance": "Attendance & Leave",
+  "/employees": "Employees",
   "/rewards": "Rewards",
   "/events": "Events",
   "/goals": "Goals",

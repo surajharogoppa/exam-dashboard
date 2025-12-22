@@ -5,6 +5,7 @@ import MainLayout from "../layouts/MainLayout";
 import Dashboard from "../pages/Dashboard";
 import Announcements from "../pages/Announcements";
 import Attendance from "../pages/Attendance";
+import Employees from "../pages/Employees";
 import Rewards from "../pages/Rewards";
 import Events from "../pages/Events";
 import Exams from "../pages/Exams";
@@ -24,6 +25,7 @@ export default function AppRoutes() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/announcements" element={<Announcements />} />
         <Route path="/attendance" element={<Attendance />} />
+        <Route path="/employees" element={<Employees />} />
         <Route path="/rewards" element={<Rewards />} />
         <Route path="/events" element={<Events />} />
         <Route path="/exams" element={<Exams />} />
