@@ -4,6 +4,7 @@ import {
   UserMinus,
   Briefcase,
 } from "lucide-react";
+
 import {
   LineChart,
   Line,
@@ -60,6 +61,8 @@ const departmentData = [
   { department: "Finance", employees: 18 },
 ];
 
+/* ---------------- COMPONENT ---------------- */
+
 export default function Dashboard() {
   return (
     <div className="space-y-10 select-none">
@@ -71,7 +74,7 @@ export default function Dashboard() {
         </p>
       </div>
 
-      {/* KPI CARDS (PASTEL STYLE) */}
+      {/* KPI CARDS */}
       <section className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
         {kpis.map(({ label, value, icon: Icon, bg }) => (
           <div
@@ -95,7 +98,7 @@ export default function Dashboard() {
         ))}
       </section>
 
-      {/* ANALYTICS SECTION */}
+      {/* ANALYTICS */}
       <section className="grid grid-cols-1 xl:grid-cols-3 gap-8">
         {/* ATTENDANCE TREND */}
         <div className="xl:col-span-2 rounded-xl p-6 bg-[#EEF2FF]">
@@ -106,7 +109,10 @@ export default function Dashboard() {
           <div className="h-64">
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={attendanceData}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#CBD5E1" />
+                <CartesianGrid
+                  strokeDasharray="3 3"
+                  stroke="#CBD5E1"
+                />
                 <XAxis dataKey="day" />
                 <YAxis />
                 <Tooltip />
@@ -131,7 +137,10 @@ export default function Dashboard() {
           <div className="h-64">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={departmentData}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#CBD5E1" />
+                <CartesianGrid
+                  strokeDasharray="3 3"
+                  stroke="#CBD5E1"
+                />
                 <XAxis dataKey="department" />
                 <YAxis />
                 <Tooltip />
