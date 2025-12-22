@@ -44,9 +44,9 @@ const bottomMenuItems = [
   {
     type: "user",
     path: "/account",
-    name: "Amirbaqian",
-    role: "Teacher",
-    avatar: "https://i.pravatar.cc/40?u=amirbaqian",
+    name: "Anand Budavi",
+    role: "Linux Admin",
+    avatar: "https://i.pravatar.cc/40",
   },
 ];
 
