@@ -77,7 +77,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
   return (
     <nav
       className={`fixed top-0 left-0 h-screen z-50
-            p-4 flex flex-col bg-white/97 backdrop-blur
+            p-3 flex flex-col bg-white/97 backdrop-blur
             transition-transform duration-300
             ${isOpen ? "translate-x-0" : "-translate-x-full"}
             md:translate-x-0
