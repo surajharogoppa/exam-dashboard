@@ -47,7 +47,7 @@ export default function CompanyNews() {
   return (
     <div className="space-y-10 select-none">
       {/* HEADER */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+      {/* <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <div>
           <h1 className="text-2xl font-semibold">Company News</h1>
           <p className="text-sm text-gray-500">
@@ -59,7 +59,7 @@ export default function CompanyNews() {
           <Plus size={16} />
           Publish news
         </button>
-      </div>
+      </div> */}
 
       
 

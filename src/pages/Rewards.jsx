@@ -57,12 +57,12 @@ export default function Rewards() {
   return (
     <div className="space-y-10 select-none">
       {/* HEADER */}
-      <div>
+      {/* <div>
         <h1 className="text-2xl font-semibold">Rewards</h1>
         <p className="text-sm text-gray-500">
           Recognize achievements and celebrate performance
         </p>
-      </div>
+      </div> */}
 
       
 

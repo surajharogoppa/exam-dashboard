@@ -23,10 +23,10 @@ export default function AttendanceReports() {
 
   return (
     <div className="space-y-8">
-      <SectionHeader
+      {/* <SectionHeader
         title="Leave Reports"
         subtitle="Balances and transactions for payroll"
-      />
+      /> */}
 
       {/* SUMMARY CARDS */}
       <section className="grid grid-cols-2 sm:grid-cols-4 gap-4">

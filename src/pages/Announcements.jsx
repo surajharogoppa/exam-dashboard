@@ -63,21 +63,25 @@ export default function Announcements() {
   return (
     <div className="space-y-10 select-none">
       {/* HEADER */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+      {/* <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 ">
         <div>
           <h1 className="text-2xl font-semibold">Announcements</h1>
           <p className="text-sm text-gray-500">
             Company updates, notices, and internal communications
           </p>
+        </div> */}
+
+      {/* <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+        <div className="ml-auto">
+          <button className="inline-flex bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 items-center gap-2">
+            <Plus size={16} />
+            New announcement
+          </button>
         </div>
+      </div> */}
 
-        <button className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 flex items-center gap-2">
-          <Plus size={16} />
-          New announcement
-        </button>
-      </div>
 
-     
+
 
       {/* FILTERS */}
       <section className="flex items-center gap-2 text-xs font-semibold text-gray-600">
@@ -153,7 +157,7 @@ export default function Announcements() {
           </div>
         </aside>
       </div>
-       {/* SUMMARY CARDS */}
+      {/* SUMMARY CARDS */}
       <section className="grid grid-cols-2 sm:grid-cols-4 gap-4">
         {summaryCards.map((c) => (
           <div

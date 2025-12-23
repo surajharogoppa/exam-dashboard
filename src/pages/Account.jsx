@@ -21,12 +21,12 @@ export default function Account() {
   return (
     <div className="space-y-10 select-none">
       {/* HEADER */}
-      <div>
+      {/* <div>
         <h1 className="text-2xl font-semibold">Account</h1>
         <p className="text-sm text-gray-500">
           Manage your personal account information and activity
         </p>
-      </div>
+      </div> */}
 
       {/* PROFILE CARD */}
       <section

@@ -19,10 +19,10 @@ export default function AttendanceLayout() {
 
   return (
     <div className="space-y-6 sm:space-y-8">
-      <SectionHeader
+      {/* <SectionHeader
         title="Attendance & Leave"
         subtitle="Track attendance, manage leave and approvals"
-      />
+      /> */}
 
       {/* ROLE-BASED TABS (MOBILE FRIENDLY) */}
       <div className="relative">

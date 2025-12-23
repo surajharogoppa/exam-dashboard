@@ -6,7 +6,17 @@ const routeTitleMap = {
   "/": "Dashboard",
   "/exams": "Exams",
   "/announcements": "Announcements",
-  "/attendance": "Attendance & Leave",
+  
+          // Attendance module
+          "/attendance": "Attendance & Leave",
+          "/attendance/my-leaves":"MyLeaves",
+          "/attendance/approvals":"Approvals",
+          "/attendance/team-calendar":"TeamCalendar",
+          "/attendance/policies":"AdminPolicies",
+          "/attendance/reports":"AttendanceReports",
+
+
+
   "/employees": "Employees",
   "/rewards": "Rewards",
   "/events": "Events",
@@ -31,13 +41,13 @@ export default function Header() {
     routeTitleMap[location.pathname] ?? "Dashboard";
 
   return (
-    <header className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+    <header className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-0 gap-0">
 
       {/* LEFT: USER > PAGE */}
       <div className="flex items-center gap-1 text-sm text-gray-600">
         <span className="opacity-50">{username} &gt;</span>
         <span className="font-semibold text-gray-800">
-          {pageTitle}
+          {pageTitle}   
         </span>
       </div>
 

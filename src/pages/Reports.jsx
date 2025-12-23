@@ -62,12 +62,12 @@ export default function Reports() {
   return (
     <div className="space-y-10 select-none">
       {/* HEADER */}
-      <div>
+      {/* <div>
         <h1 className="text-2xl font-semibold">Reports</h1>
         <p className="text-sm text-gray-500">
           Generate, download, and schedule organizational reports
         </p>
-      </div>
+      </div> */}
 
       {/* SUMMARY */}
       <section className="grid grid-cols-2 sm:grid-cols-4 gap-4">

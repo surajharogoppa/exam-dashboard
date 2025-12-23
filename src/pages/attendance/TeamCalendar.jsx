@@ -35,10 +35,10 @@ export default function TeamCalendar() {
 
   return (
     <div className="space-y-6">
-      <SectionHeader
+      {/* <SectionHeader
         title="Team Calendar"
         subtitle="Team availability and overlap overview"
-      />
+      /> */}
 
       {/* MONTH + YEAR HEADER */}
       <Card>

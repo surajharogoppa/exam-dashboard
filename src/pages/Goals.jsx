@@ -54,12 +54,12 @@ export default function Goals() {
   return (
     <div className="space-y-10 select-none">
       {/* HEADER */}
-      <div>
+      {/* <div>
         <h1 className="text-2xl font-semibold">Goals</h1>
         <p className="text-sm text-gray-500">
           Track progress and align teams with company objectives
         </p>
-      </div>
+      </div> */}
 
       {/* SUMMARY */}
       <section className="grid grid-cols-2 sm:grid-cols-4 gap-4">

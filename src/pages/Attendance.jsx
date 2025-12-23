@@ -41,12 +41,12 @@ export default function Attendance() {
   return (
     <div className="space-y-10 select-none">
       {/* HEADER */}
-      <div>
+      {/* <div>
         <h1 className="text-2xl font-semibold">Attendance & Leave</h1>
         <p className="text-sm text-gray-500">
           Track attendance and manage leave requests
         </p>
-      </div>
+      </div> */}
 
       {/* SUMMARY */}
       <section className="grid grid-cols-2 sm:grid-cols-4 gap-4">

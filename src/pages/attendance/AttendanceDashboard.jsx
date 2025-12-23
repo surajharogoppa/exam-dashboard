@@ -10,10 +10,10 @@ export default function AttendanceDashboard() {
 
   return (
     <div className="space-y-6 sm:space-y-8">
-      <SectionHeader
+      {/* <SectionHeader
         title="Attendance & Leave"
         subtitle="Overview of leave balances and activity"
-      />
+      /> */}
 
       {/* LEAVE BALANCES */}
       {isEmployee && (

@@ -51,14 +51,26 @@ export default function Messages() {
   return (
     <div className="space-y-10 select-none">
       {/* HEADER */}
-      <div>
+      {/* <div>
         <h1 className="text-2xl font-semibold">Messages</h1>
         <p className="text-sm text-gray-500">
           Communicate with team members and groups
         </p>
-      </div>
+      </div> */}
 
-    
+         {/* SUMMARY */}
+      <section className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        {summary.map((s) => (
+          <div
+            key={s.label}
+            className="rounded-xl p-4"
+            style={{ backgroundColor: s.bg }}
+          >
+            <div className="text-xs text-gray-600">{s.label}</div>
+            <div className="text-2xl font-semibold">{s.value}</div>
+          </div>
+        ))}
+      </section>
 
       {/* MAIN GRID */}
       <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
@@ -142,19 +154,7 @@ export default function Messages() {
           </div>
         </aside>
       </div>
-        {/* SUMMARY */}
-      <section className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        {summary.map((s) => (
-          <div
-            key={s.label}
-            className="rounded-xl p-4"
-            style={{ backgroundColor: s.bg }}
-          >
-            <div className="text-xs text-gray-600">{s.label}</div>
-            <div className="text-2xl font-semibold">{s.value}</div>
-          </div>
-        ))}
-      </section>
+       
     </div>
     
   );

@@ -39,7 +39,7 @@ export default function Employees() {
   return (
     <div className="space-y-10 select-none">
       {/* HEADER */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+      {/* <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <div>
           <h1 className="text-2xl font-semibold">Employees</h1>
           <p className="text-sm text-gray-500">
@@ -51,7 +51,7 @@ export default function Employees() {
           <UserPlus size={16} />
           Add employee
         </button>
-      </div>
+      </div> */}
 
       {/* SUMMARY */}
       <section className="grid grid-cols-2 sm:grid-cols-4 gap-4">

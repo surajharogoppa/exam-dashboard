@@ -27,10 +27,10 @@ export default function Approvals() {
 
   return (
     <div className="space-y-8">
-      <SectionHeader
+      {/* <SectionHeader
         title="Approvals"
         subtitle="Review and act on leave requests"
-      />
+      /> */}
 
       <section className="space-y-4">
         {/* Delegation banner */}

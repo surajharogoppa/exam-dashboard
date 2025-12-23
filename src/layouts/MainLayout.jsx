@@ -35,7 +35,7 @@ export default function MainLayout() {
               marginLeft: window.innerWidth >= 768 ? sidebarWidth : 0,
             }}
           >
-            <div className="bg-white/100 backdrop-blur shadow-sm p-4 sm:p-5 md:p-6 min-h-full space-y-6 rounded-none md:rounded-2xl">
+            <div className="bg-white/100 backdrop-blur shadow-sm p-4 sm:p-5 md:p-5 min-h-full space-y-0 rounded-none md:rounded-2xl">
               <Header />
               <Outlet />
             </div>

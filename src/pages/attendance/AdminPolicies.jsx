@@ -15,7 +15,7 @@ export default function AdminPolicies() {
   }
   return (
     <div className="space-y-8">
-      <SectionHeader
+      {/* <SectionHeader
         title="Leave Policies"
         subtitle="Configure and manage leave rules"
         action={
@@ -23,7 +23,7 @@ export default function AdminPolicies() {
             Create Policy
           </button>
         }
-      />
+      /> */}
 
       <section className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {policies.map((policy) => (

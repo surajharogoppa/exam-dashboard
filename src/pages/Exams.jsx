@@ -12,7 +12,7 @@ export default function Exams() {
   return (
     <>
       {/* Page title */}
-      <div className="space-y-2">
+      {/* <div className="space-y-2">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <div>
             <h1 className="text-2xl font-semibold">Exams</h1>
@@ -25,7 +25,7 @@ export default function Exams() {
             + Add new exam
           </button>
         </div>
-      </div>
+      </div> */}
 
       {/* Month tabs */}
       <MonthTabs

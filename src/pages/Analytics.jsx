@@ -47,12 +47,12 @@ export default function Analytics() {
   return (
     <div className="space-y-10 select-none">
       {/* HEADER */}
-      <div>
+      {/* <div>
         <h1 className="text-2xl font-semibold">Analytics</h1>
         <p className="text-sm text-gray-500">
           Insights and trends across workforce data
         </p>
-      </div>
+      </div> */}
 
       {/* SUMMARY */}
       <section className="grid grid-cols-2 sm:grid-cols-4 gap-4">

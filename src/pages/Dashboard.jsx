@@ -66,13 +66,13 @@ const departmentData = [
 export default function Dashboard() {
   return (
     <div className="space-y-10 select-none">
-      {/* PAGE HEADER */}
+      {/* PAGE HEADER
       <div>
         <h1 className="text-2xl font-semibold">Dashboard</h1>
         <p className="text-sm text-gray-500">
           Overview of organization performance
         </p>
-      </div>
+      </div> */}
 
       {/* KPI CARDS */}
       <section className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
