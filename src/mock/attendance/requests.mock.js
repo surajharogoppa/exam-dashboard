@@ -1,0 +1,28 @@
+export const leaveRequests = [
+  {
+    id: "LR_101",
+    employeeId: "E001",
+    employeeName: "Suraj Harogoppa",
+    leaveType: "Earned Leave",
+    from: "2025-03-10",
+    to: "2025-03-12",
+    units: 3,
+    reason: "Family function",
+    status: "PENDING",
+    approverChain: ["MGR_01", "HR_01"],
+    appliedOn: "2025-03-01",
+  },
+  {
+    id: "LR_102",
+    employeeId: "E002",
+    employeeName: "Suraj Harogoppa",
+    leaveType: "Earned Leave",
+    from: "2025-03-20",
+    to: "2025-03-02",
+    units: 3,
+    reason: "Family function",
+    status: "PENDING",
+    approverChain: ["MGR_01", "HR_01"],
+    appliedOn: "2025-03-01",
+  },
+];
