@@ -41,7 +41,7 @@ export default function Header() {
     routeTitleMap[location.pathname] ?? "Dashboard";
 
   return (
-    <header className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-0 gap-0">
+    <header className="flex flex-row justify-between items-start">
 
       {/* LEFT: USER > PAGE */}
       <div className="flex items-center gap-1 text-sm text-gray-600">
@@ -55,7 +55,7 @@ export default function Header() {
       <div className="flex items-center gap-3">
 
         {/* Notification Bell */}
-        <button className="p-2 rounded-md hover:bg-gray-200">
+        {/* <button className="p-2 rounded-md hover:bg-gray-200">
           <svg
             className="w-6 h-6 stroke-current text-gray-600"
             fill="none"
@@ -67,7 +67,7 @@ export default function Header() {
           >
             <path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0 1 18 14.158V11a6 6 0 1 0-12 0v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0a3 3 0 1 1-6 0h6z" />
           </svg>
-        </button>
+        </button> */}
 
         {/* Chat / Messages */}
         <button className="p-2 rounded-md hover:bg-gray-200">
