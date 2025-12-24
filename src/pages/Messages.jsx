@@ -58,7 +58,7 @@ export default function Messages() {
         </p>
       </div> */}
 
-         {/* SUMMARY */}
+      {/* SUMMARY */}
       <section className="grid grid-cols-2 sm:grid-cols-4 gap-4">
         {summary.map((s) => (
           <div
@@ -91,8 +91,9 @@ export default function Messages() {
                 <div className="text-sm font-semibold flex items-center gap-2">
                   {c.name}
                   {c.unread && (
-                    <span className="w-2 h-2 bg-black rounded-full" />
+                    <span className="w-1 h-1 bg-green-600 rounded-full" />
                   )}
+
                 </div>
                 <div className="text-xs text-gray-600 truncate max-w-[180px]">
                   {c.lastMessage}
@@ -154,9 +155,9 @@ export default function Messages() {
           </div>
         </aside>
       </div>
-       
+
     </div>
-    
+
   );
 }
 
@@ -165,11 +166,10 @@ export default function Messages() {
 function MessageBubble({ data }) {
   return (
     <div
-      className={`max-w-[80%] p-3 rounded-xl text-xs ${
-        data.mine
+      className={`max-w-[80%] p-3 rounded-xl text-xs ${data.mine
           ? "bg-black text-white ml-auto"
           : "bg-white text-gray-700"
-      }`}
+        }`}
     >
       {data.text}
     </div>
