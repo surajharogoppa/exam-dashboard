@@ -43,6 +43,17 @@ const announcements = [
 export default function Announcements() {
   return (
     <div className="space-y-10 select-none">
+      {/* SUMMARY */}
+      <section className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        {summaryCards.map((c) => (
+          <StatCard
+            key={c.label}
+            label={c.label}
+            value={c.value}
+            bg={c.bg}
+          />
+        ))}
+      </section>
       {/* Filters */}
       <FilterPills
         items={["All", "HR", "Engineering", "Design", "Important"]}
@@ -118,17 +129,7 @@ export default function Announcements() {
         </aside>
       </div>
 
-      {/* SUMMARY */}
-      <section className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        {summaryCards.map((c) => (
-          <StatCard
-            key={c.label}
-            label={c.label}
-            value={c.value}
-            bg={c.bg}
-          />
-        ))}
-      </section>
+      
     </div>
   );
 }
