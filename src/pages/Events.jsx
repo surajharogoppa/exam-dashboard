@@ -142,7 +142,6 @@ export default function Events() {
             {events.map((e, i) => (
               <InfoCard
                 key={i}
-                badge="class"
                 variant="announcement"
                 title={e.title}
                 subtitle={`${e.date}, ${e.time}`}
