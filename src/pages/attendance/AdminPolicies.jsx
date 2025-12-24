@@ -2,7 +2,8 @@ import SectionHeader from "../../components/ui/SectionHeader";
 import PolicySummaryCard from "../../components/attendance/PolicySummaryCard";
 import { policies } from "../../mock/attendance/policies.mock";
 import EmptyState from "../../components/ui/EmptyState"
-import { useAuth } from "../../context/AuthContext";      
+import { useAuth } from "../../context/AuthContext";
+import{Plus} from "lucide-react"      
 export default function AdminPolicies() {
 
   const { user } = useAuth();
@@ -15,15 +16,15 @@ export default function AdminPolicies() {
   }
   return (
     <div className="space-y-8">
-      {/* <SectionHeader
+      <SectionHeader
         title="Leave Policies"
         subtitle="Configure and manage leave rules"
-        action={
-          <button className="bg-black text-white px-4 py-2 rounded-md text-sm">
-            Create Policy
-          </button>
-        }
-      /> */}
+        action={{
+          label: "Create Policy",
+          onClick: () => {},
+          icon: Plus,
+        }}
+      />
 
       <section className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {policies.map((policy) => (

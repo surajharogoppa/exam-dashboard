@@ -1,9 +1,10 @@
 import SectionHeader from "../../components/ui/SectionHeader";
 import LedgerTable from "../../components/data/LedgerTable";
-import Card from "../../components/ui/Card";
+import StatCard from "../../components/ui/StatCard";
 import EmptyState from "../../components/ui/EmptyState";
 import { ledgerEntries } from "../../mock/attendance/ledger.mock";
 import { useAuth } from "../../context/AuthContext";
+import {Plus} from "lucide-react";
 
 export default function AttendanceReports() {
   const { user } = useAuth();
@@ -13,7 +14,7 @@ export default function AttendanceReports() {
     return <EmptyState text="Reports are available to HR only." />;
   }
 
-  // 🔢 SIMPLE SUMMARY (mocked for now)
+  // 🔢 SUMMARY METRICS
   const summary = [
     { label: "Accrued", value: "120 Days", bg: "#EEF2FF" },
     { label: "Used", value: "86 Days", bg: "#FEE2E2" },
@@ -23,24 +24,32 @@ export default function AttendanceReports() {
 
   return (
     <div className="space-y-8">
-      {/* <SectionHeader
+      {/* Header (enable if needed) */}
+      
+       <SectionHeader
         title="Leave Reports"
-        subtitle="Balances and transactions for payroll"
-      /> */}
+           subtitle="Balances and transactions for payroll"
+           action={{
+          label: "Create event",
+          onClick: () => {},
+          icon: Plus,
+        }}
+      />
+     
 
-      {/* SUMMARY CARDS */}
+      {/* SUMMARY */}
       <section className="grid grid-cols-2 sm:grid-cols-4 gap-4">
         {summary.map((s) => (
-          <Card key={s.label} bg={s.bg}>
-            <div className="text-xs text-gray-600">{s.label}</div>
-            <div className="text-xl font-semibold">{s.value}</div>
-          </Card>
+          <StatCard
+            key={s.label}
+            label={s.label}
+            value={s.value}
+            bg={s.bg}
+          />
         ))}
       </section>
 
-     
-
-      {/* LEDGER TABLE */}
+      {/* LEDGER */}
       <LedgerTable entries={ledgerEntries} />
     </div>
   );
